@@ -1,0 +1,87 @@
+/*СТИЛЬ ФОРМЫ РЕГИСТАЦИИ / АВТОРИЗАЦИИ*/
+.login-wrap {
+max-width: 1000px;
+min-height: 850px;
+margin: 0 auto;
+}
+
+.login-html {
+height: 700px;
+padding: 90px 70px 50px 80px;
+background:#ffdd6e9d;
+margin-bottom: 20px;
+border-radius: 20px;
+text-align: center;
+}
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+position:absolute;
+transform:rotateY(180deg);
+backface-visibility:hidden;
+transition:all .4s linear;
+}
+
+.login-html .sign-in,.login-html .sign-up,.login-form .group .check {
+display: none;
+}
+
+.login-html .tab{
+font-family: 'El Messiri', sans-serif;  
+font-size: 30px;
+padding-bottom: 5px;
+margin: 0 15px 10px 0;
+display: inline-block;
+border-bottom: 2px solid transparent; 
+}
+
+.login-html .sign-in:checked + .tab,.login-html .sign-up:checked + .tab {
+color: #ffbb00;
+border-color:white;
+}
+
+.login-form {
+position: relative;
+perspective: 1000px;
+}
+
+.login-form .group {
+margin-top: 15px;    
+margin-bottom:20px;
+}
+
+.login-form .group .label,.login-form .group .input,.login-form .group .button {
+width: 600px;
+height: 50px;
+color: black;
+font-family: 'El Messiri', sans-serif;  
+font-size: 20px;
+}
+
+.login-form .group .input,.login-form .group .button {
+border:none;
+padding:15px;
+margin-top: 5;
+border-radius:25px;
+}
+
+.login-form .group .label {
+color:rgb(42, 42, 42);
+font-size:15px;
+}
+
+.login-form .group .button {
+background: #ffbb00;
+}
+
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
+transform:rotate(0);
+}
+
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+transform:rotate(0);
+}

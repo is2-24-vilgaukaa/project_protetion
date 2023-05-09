@@ -1,0 +1,578 @@
+/*ГЛАВНАЯ СТРАНИЦА*/
+/*добавление фонового изображения*/
+body {
+background: url(../picture/fon.jpg);
+background-size: 100%;
+overflow-x: hidden;
+}
+
+/*прелоадер (позиционирование)*/
+.preloader {
+position: fixed;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+background: url(../picture/загрузка.gif);
+background-size: 100%;
+z-index: 1001;
+}
+
+/*прелоадер (появление)*/
+.loaded_hiding .preloader {
+transition: 0.3s opacity;
+opacity: 0;
+}
+
+/*прелоадер (скрытие)*/
+.loaded .preloader {
+display: none;
+}
+
+/*шрифт*/
+span, p {
+font-family: 'El Messiri', sans-serif;    
+}
+
+/*выравнивание блока "шапка" по центру*/
+.head {
+text-align: center;
+}
+
+/*навигационное меню (ссылки)*/
+.head a {
+color: #ffc400;
+text-decoration: none;
+font-size: 20px;
+text-transform: uppercase; 
+text-align: right;
+padding: 10px;
+font-family: 'El Messiri', sans-serif;
+}
+
+/*смена цвета при наведении на ссылку*/
+.head a:hover {
+color:#7a83ff;
+}
+
+/*размер логотипа*/
+.sk {
+width: 200px;
+height: 80px;  
+}
+
+/*задний фон для поисковой строки*/
+.search {
+background-color: #342680;
+height: 70px;
+text-align: right;
+}
+
+/*ссылка на кнопке*/
+.search a {
+color: #ffffff;
+text-decoration: none;
+font-family: 'El Messiri', sans-serif;
+}
+
+/*стиль кнопки "введите запрос"*/
+.searchInput {
+width: 400px;
+height: 30px;
+border-radius: 5px;
+margin-left: 10px;
+font-family: 'El Messiri', sans-serif;
+}
+
+/*стиль для кнопки поиска*/
+.searchBut {
+width: 150px;
+height: 30px;   
+border-radius: 5px;
+background-color: #7a83ff;
+border-color: #ffffff;
+font-family: 'El Messiri', sans-serif;
+margin-right: 30px;
+color: white;
+}
+
+/*смена цвета при наведении на кнопку*/
+.searchBut:hover {
+background-color: #342680;
+}
+
+/*блок "категории" (выравнивание по центру)*/
+.divCatalog {
+width: 100%;
+text-align: center;
+}
+
+/*категории (заголовок)*/
+.catalogSpan {
+color: #ffc400;
+font-size: 30px;
+font-family: 'El Messiri', sans-serif;
+}
+
+/*4 категории (серьги, ожерелья, диадемы, кольца)*/
+.catalog {
+background: #7a83ff;
+width: 200px;
+height: 60px;
+text-align: center;
+display: inline-block;
+color: #ffffff;
+border-color: #ffffff;
+margin-top: 30px;
+margin-left: 30px;
+font-family: 'El Messiri', sans-serif;
+font-size: 20px;
+}
+
+/*смена цвета при наведении*/
+.catalog:hover {
+background-color: #ffdd6e;
+}
+
+/*задний фон инфо-ого блока*/
+.infoDiv {
+background-color: #7a83ff85;
+font-family: 'El Messiri', sans-serif;
+}
+
+/*ТЕКСТ НА ФОТО*/
+/*расположение текста*/
+.lake {
+display: inline-block;
+position: relative;
+}
+
+/*высветвление фото при наведении*/
+.lake:before {
+background-color: rgba(255, 255, 255, 0.658);
+content: ""; /*для появления белого фона при наведении*/
+height: 100%;
+opacity: 0;
+position: absolute;
+width: 100%;
+z-index: 2;
+border-radius: 50%;
+}
+
+/*прозрачность*/
+.lake:hover:before {
+opacity: 0.6;
+}
+
+/*появление текста на фото*/
+.lake:after {
+font-family: 'El Messiri', sans-serif;
+color: rgb(0, 0, 0);
+content: attr(alt);
+display: block;
+font-size: 16px;
+opacity: 0;
+padding: 0 3%;
+position: absolute;
+top: 50%;
+width: 94%;
+z-index: 3;
+}
+
+/*появление текста*/
+.lake:hover:after {
+opacity: 1;
+-webkit-transform: scale(1) translateY(-50%);
+transform: scale(1) translateY(-50%);
+}
+
+/*плавное появление текста*/
+.lake:after {
+-webkit-transition: all 350ms ease-in-out;
+transition: all 350ms ease-in-out;
+}
+
+/*размер фото в поисковой строке*/
+.infosearch img {
+width: 150px;
+height: 150px;
+border-radius: 50%;    
+padding: 40px;
+}
+
+/*выравнивание инфо-ого блока*/
+.infoTable {
+width: 100%;
+text-align: center;
+}
+
+/*отступ слева*/
+.inf {
+width: 10%;
+}
+  
+/*ширина ячеек таблицы*/
+.info {
+width: 500px;
+}
+
+/*заголовок инфо-ого блока*/
+.infoH1 {
+color: #ffffff; 
+font-family: 'El Messiri', sans-serif;   
+}
+
+/*размер текста*/
+.infoP, .stocksSpan {
+font-family: 'El Messiri', sans-serif;  
+font-size: 18px;    
+}
+
+/*выравнивание блока акции по центру*/
+.stocks, .infosearch, .sotr {
+text-align: center;
+}
+
+/*размер фото в блоке акции*/
+.stocks img {
+width: 400px;
+padding: 10px;
+border-radius: 20px;
+}
+
+/*название товара (акции)*/
+.titleStyleBD {
+font-family: 'El Messiri', sans-serif;     
+font-size: 20px;
+}
+
+/*выравнивание таблицы по центру*/
+.stocksTable, .sotrTable, .sotrTableIcon {
+width: 100%;
+text-align: center;
+}
+
+/*выравнивание блока*/
+.plusDiv {
+font-family: 'El Messiri', sans-serif;
+text-align: center; 
+}
+
+/*размер изображений в блоке Преимущества*/
+.plusImg {
+width: 350px;  
+height: 250px;
+padding: 10px;
+}
+
+/*стиль для блока промокод*/
+.promo {
+background-color: #342680;   
+text-align: center;
+height: 90px;
+}
+
+/*стиль для кнопки (получить промокод)*/
+.promoBtn {
+background-color: #7a83ff;
+border-color: #ffffff;
+color: white;
+font-size: 30px;
+width: 500px;
+font-family: 'El Messiri', sans-serif;   
+}
+
+/*"подвал"*/
+.footer {
+text-align: center;
+background-color: #7a83ff85;
+}
+
+/*ссылки в "подвале"*/
+.footer a {
+color: #ffffff;
+text-decoration: none;
+font-size: 20px;
+text-transform: uppercase; 
+text-align: right;
+padding: 10px;
+font-family: 'El Messiri', sans-serif;
+}
+
+/*размер иконок в "подвале"*/
+.icon {
+width: 20px;
+height: 20px;
+margin-left: 10px;
+}
+
+/*СТИЛЬ ДЛЯ СТРАНИЦЫ "О НАС"*/
+/*размер изображения*/
+.infoAddressImg {
+width: 500px;
+height: 300px;
+border-radius: 20px;    
+}
+
+/*синий фон для заголовков*/
+.bluefon {
+background-color: #342680;
+text-align: center; 
+height: 80px;
+}
+
+/*заголовок в синем фоне*/
+.bf {
+font-size: 30px;
+font-family: 'El Messiri', sans-serif;
+color: white;
+}
+
+/*фото сотрудников*/
+.sotrTable img {
+width: 400px;
+padding: 10px;
+border-radius: 20px;
+}
+
+/*появление рамки при наведении*/
+.sotrTable img:hover {
+background-color: #ffdd6e;
+}
+
+/*размер иконок соц сетей*/
+.sotrTableIcon img {
+width: 140px;
+height: 140px;    
+}
+
+/*таблица MAP (карта)*/
+.mapTable {
+text-align: center;
+width: 100%;
+margin-left: 50px;
+}
+
+/*контейнер для карты*/
+.mapTD {
+width: 800px;
+}
+
+/*СТРАНИЦА ДОСТАВКА*/
+/*выравнивание по центру*/
+.deliveryPartners, .center {
+text-align: center;
+}
+
+/*размер изображений (доставка)*/
+.deliveryPartners img {
+padding: 20px;
+width: 200px;
+}
+
+/*таблица для рассчета цены доставки*/
+.priceTable {
+width: 100%;
+text-align: center;
+height: 250px;
+}
+
+/*цвет строки (темный)*/
+.priceTRcolor1 {
+background-color: #342680;
+color: white; 
+}
+
+/*цвет строки (средний)*/
+.priceTRcolor2 {
+background-color: rgb(152, 157, 253);
+color: white; 
+}
+
+/*цвет строки (светлый)*/
+.priceTRcolor3 {
+background-color: #babeffff;
+color: white; 
+}
+
+/*текст*/
+.deliveryP {
+text-indent: 25px;
+font-size: 20px;
+text-align: justify;
+}
+
+/*раздел получить заказ*/
+.deliveryINFO {
+width: 100%;
+}
+
+/*размер gif*/
+.deliveryINFO img {
+width: 600px;
+height: 400px;
+border-radius: 40px;
+padding: 20px;
+}
+
+/*СТРАНИЦА КУРСЫ*/
+/*выравнивание таблицы*/
+.masterClassTable {
+width: 100%;
+text-align: center;
+}
+
+/*размер фото (курсы)*/
+.masterClass img {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+padding: 10px;
+}
+
+/*появление рамки при наведении на фото*/
+.masterClass img:hover {
+background-color: #ffdd6e;
+}
+
+/*текст*/
+.masterClass span, .recordCourse p {
+font-family: 'El Messiri', sans-serif;   
+font-size: 18px;
+}
+
+/*инструкция по работе со смолой*/
+.smola img {
+height: 600px; 
+border-radius: 70px;     
+padding: 40px;
+}
+
+/*задний фон для инструкции*/
+.smola {
+background-color: #7a83ff85; 
+}
+
+/*размер схем плетения из бисера*/
+.scheme img {
+width: 450px;
+height: 400px;   
+padding: 10px;
+border-radius: 20px;
+}
+
+/*стиль для формы подачи заявки*/
+.courseInput {
+width: 500px;
+height: 40px;
+border-radius: 10px;
+margin: 10px;
+border: none;
+font-size: 16px;
+font-family: 'El Messiri', sans-serif;   
+}
+
+/*задний фон формы*/
+.recordCourse {
+padding: 20px;
+background-color: #ffdd6ea4;
+}
+
+/*стиль для кнопки отправить заявку*/
+.courseButton {
+width: 300px;
+height: 40px;
+margin-top: 10px;
+border-radius: 10px;
+font-size: 16px;
+border-color: #ffffff;
+background-color: #fff5d4;
+font-family: 'El Messiri', sans-serif;  
+}
+
+/*СТРАНИЦА ПРОФИЛЬ*/
+/*ширина таблицы*/
+.user_profile_table {
+width: 100%;
+}
+
+/*размер иконки профиля*/
+.user_img {
+width: 200px;
+height: 200px;
+border-radius: 50%;    
+}
+
+/*кнопки с акциями*/
+.profile_catalog {
+background: #7a83ff;
+width: 400px;
+height: 50px;
+text-align: center;
+margin: 10px;
+color: #ffffff;
+border-color: #ffffff;
+font-family: 'El Messiri', sans-serif;
+font-size: 20px;
+}
+
+/*смена цвета при наведении*/
+.profile_catalog:hover {
+background-color: #ffdd6e;
+}
+
+/*текст в таблице*/
+.user_profile_table p {
+font-size: 20px;
+font-family: 'El Messiri', sans-serif;     
+}
+
+/*иконка перехода на другую страницу*/
+.basket_img {
+width: 100px;
+height: 100px;
+border-radius: 50%;      
+}
+
+/*стиль для названия товара в корзине*/
+.basket span {
+background: linear-gradient(white, rgb(244, 242, 255));
+padding: 7px;  
+position: absolute;
+width: 94%;
+border-radius: 30px;
+}
+
+/*размер иконок товаров в корзине*/
+.basket img {
+width: 50px;
+height: 50px;
+border-radius: 50%;     
+}
+
+/*ссылка на курсы*/
+.course_href {
+text-decoration: none;
+color: black;
+}
+
+/*кнопка убрать из корзины*/
+.basket button {
+background: #7a83ff;
+width: 200px;
+height: 40px;
+text-align: center;
+color: #ffffff;
+border-color: #ffffff;
+font-family: 'El Messiri', sans-serif;
+font-size: 16px;    
+}
+
+/*СТРАНИЦА ТОВАРЫ*/
+/*размер иконки вверх*/
+.imgUp {
+width: 50px;
+height: 50px;
+border-radius: 50%;  
+margin-left: 95%;   
+}

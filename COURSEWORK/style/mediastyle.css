@@ -1,0 +1,262 @@
+/*ГЛАВНАЯ*/
+/*МИН*/
+@media screen and (min-width: 200px) and (max-width: 500px) {   
+.head a {font-size: 15px;} /*меню*/
+.searchInput {width: 170px; height: 20px; padding: 10px;} /*поисковая строка*/
+.searchBut {width: 120px; height: 25px; } /*поиск*/     
+.catalog {width: 70px; height: 30px; font-size: 15px;} /*кнопки каталог (серьги, кольца и т.д.)*/
+.titleStyleBD {font-size: 12px;} /*описание акции*/
+.stocks img {width: 100px; padding: 10px;} /*акции ()*/
+.plusImg {width: 120px; height: 100px; padding: 10px;} /*преимущества (фото)*/
+.footer a {font-size: 15px;} /*меню*/
+
+/*слайдер*/
+#slider_bl .slider-wrapper {position: absolute; margin-left: -140px; width: 200px; top: -60px;} 
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2),
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3),
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4),
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5),
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1) {
+position: absolute; margin-left: 30px; width: 20px; height: 20px;} 
+.infoP {font-size: 13px; width: 200px; margin-left: 0px;}
+.infoH1 {font-size: 25px; width: 300px; margin-left: -50px; margin-right: 100px; }
+}
+
+/*МИН+*/
+@media screen and (min-width: 501px) and (max-width: 801px) { 
+.head a {font-size: 16px;} /*меню*/
+.searchInput {width: 230px; height: 20px; padding: 10px;} /*поисковая строка*/
+.searchBut {width: 130px; height: 25px; } /*поиск*/       
+.catalog {width: 85px; height: 40px; font-size: 15px;} /*кнопки каталог (серьги, кольца и т.д.)*/
+.titleStyleBD {font-size: 14px;} /*описание акции*/
+.stocks img {width: 140px; padding: 10px;} /*акции ()*/
+.plusImg {width: 130px; height: 100px; padding: 10px; } /*преимущества (фото)*/
+.footer a {font-size: 16px;} /*меню*/
+}
+
+/*слайдер*/
+@media screen and (min-width: 501px) and (max-width: 600px) {
+#slider_bl .slider-wrapper {position: absolute; margin-left: -140px; width: 260px; top: -80px;} 
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2),
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3),
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4),
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5),
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1) {
+position: absolute; margin-left: 80px; width: 20px; height: 20px;} 
+.infoP {font-size: 13px; width: 200px; margin-left: 0px;}
+.infoH1 {font-size: 25px; width: 300px; margin-left: -50px; margin-right: 100px; }
+}
+
+/*слайдер*/
+@media screen and (min-width: 601px) and (max-width: 800px) {
+#slider_bl .slider-wrapper {position: absolute; margin-left: -100px; width: 270px; top: -80px;} 
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2),
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3),
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4),
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5),
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1) {
+position: absolute; margin-left: 140px; width: 20px; height: 20px;} 
+.infoP {font-size: 15px; width: 300px; margin-left: 0px;}
+.infoH1 {font-size: 25px; width: 300px; margin-left: 10px; margin-right: 100px; }
+}
+
+/*МАКС-*/
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+.catalog {width: 130px; height: 50px; font-size: 15px;} /*кнопки каталог (серьги, кольца и т.д.)*/    
+.stocks img {width: 200px; padding: 10px;} /*акции ()*/ 
+.plusImg {width: 200px; height: 150px; padding: 10px; } /*преимущества (фото)*/ 
+
+/*слайдер*/
+#slider_bl .slider-wrapper {width: 300px;} 
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2),
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3),
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4),
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5),
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1) {
+position: absolute; margin-left: 270px; width: 25px; height: 25px;}
+.infoP {font-size: 15px; width: 300px; margin-left: 20px;}
+.infoH1 {font-size: 25px; width: 300px; margin-left: 20px; margin-right: 100px;} 
+}
+
+/*МАКС*/
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+.stocks img {width: 250px; padding: 10px;} /*акции ()*/ 
+.plusImg {width: 300px; height: 170px; padding: 10px; } /*преимущества (фото)*/  
+
+/*слайдер*/
+#slider_bl .slider-wrapper {width: 400px;} 
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2),
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3),
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4),
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5),
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1) {
+position: absolute; margin-left: 370px; width: 25px; height: 25px;}
+.infoP {font-size: 18px; width: 400px; margin-left: 20px; margin-right: 100px;}
+.infoH1 {font-size: 25px; width: 400px; margin-left: 20px;margin-right: 100px;}  
+}
+
+
+/*СТРАНИЦА О НАС*/
+/*МИН*/
+@media screen and (min-width: 200px) and (max-width: 500px) { 
+.infoAddressImg {position: absolute; margin-left: -160px; width: 150px; height: 100px;} /*фото здания*/
+.sotrTable img {width: 100px; height: 100px;} /*фото сотрудников*/
+.sotrTableIcon img {width: 50px; height: 50px;} /*соц сети*/
+.lake:after{font-size: 10px;} /*ссылки*/
+.mapTD {width: 200px;} /*карта*/ 
+.mapTable {margin-left: 10px;} /*отступ карты*/
+.mapTable span {font-size: 14px;} /*местоположение*/
+}
+
+/*фото сотрудников*/
+@media screen and (min-width: 501px) and (max-width: 680px) {.sotrTable img {width: 100px; height: 100px;}}
+@media screen and (min-width: 681px) and (max-width: 800px) {.sotrTable img {width: 200px; height: 200px;}}
+
+/*МИН+*/
+@media screen and (min-width: 501px) and (max-width: 801px) { 
+.infoAddressImg {position: absolute; margin-left: -160px; width: 160px; height: 130px;} /*фото здания*/ 
+.sotrTableIcon img {width: 70px; height: 70px;} /*соц сети*/
+.lake:after{font-size: 10px;} /*ссылки*/
+.mapTD {width: 250px;} /*карта*/ 
+.mapTable {margin-left: 10px;} /*отступ карты*/
+.mapTable span {font-size: 14px;} /*местоположение*/
+}
+
+/*МАКС-*/
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+.infoAddressImg {width: 350px; height: 250px; margin-right: 100px;} /*фото здания*/    
+.sotrTable img {width: 250px; height: 250px;} /*фото сотрудников*/      
+.mapTD {width: 400px;} /*карта*/ 
+.mapTable {margin-left: 40px;} /*отступ карты*/
+.mapTable span {font-size: 14px;} /*местоположение*/
+}
+
+/*МАКС*/
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+.infoAddressImg {width: 450px; height: 300px; margin-right: 100px;}  /*фото здания*/  
+.sotrTable img {width: 300px; height: 300px;} /*фото сотрудников*/        
+.mapTD {width: 500px;} /*карта*/ 
+}
+
+
+/*СТРАНИЦА ТОВАРЫ*/ 
+/*МИН*/
+@media screen and (min-width: 200px) and (max-width: 500px) {
+/*анимированнный слайдер*/    
+.container_slider img {width: 350px; height: 300px; margin-left: 20%;}
+.container_slider {top: 20px; right: 80px; position: absolute;}
+.imgUp {margin-left: 90%;} /*иконка вверх*/
+.css-modal-details summary {width: 100px; height: 20px; font-size: 14px;} /*кнопка купить*/
+}
+
+/*МИН+*/
+@media screen and (min-width: 501px) and (max-width: 801px) { 
+/*анимированнный слайдер*/ 
+.container_slider img {width: 420px; height: 320px; margin-left: 25%;}
+.container_slider {top: 20px; right: 80px; position: absolute;}
+.imgUp {margin-left: 90%;} /*иконка вверх*/
+.css-modal-details summary {width: 100px; height: 20px; font-size: 14px;} /*кнопка купить*/
+}
+
+
+/*СТРАНИЦА ПРОФИЛЬ*/ 
+/*МИН*/
+@media screen and (min-width: 200px) and (max-width: 500px) {
+.login-form .group .label,.login-form .group .input,.login-form .group .button {
+max-width: 300px; min-height: 30px; margin: 0 auto;} /*форма регистрации / авторизации*/
+#title {font-size: 25px;} /*заголовки*/
+.profile_catalog {width: 120px; height: 50px; font-size: 13px;} /*скидки на профиле*/
+.user_profile_table p {font-size: 13px;} /*текст*/
+.user_img {width: 50px; height: 50px;} /*иконка пользователя*/
+.basket_img {width: 50px; height: 50px;} /*товары*/
+}
+
+/*МИН+*/
+@media screen and (min-width: 501px) and (max-width: 801px) { 
+.login-form .group .label,.login-form .group .input,.login-form .group .button {
+max-width: 400px; min-height: 30px; margin: 0 auto;} /*форма регистрации / авторизации*/
+.profile_catalog {width: 135px; height: 50px; font-size: 13px;} /*скидки на профиле*/
+.user_profile_table p {font-size: 15px;} /*текст*/
+.user_img {width: 60px; height: 60px;} /*иконка пользователя*/
+.basket_img {width: 60px; height: 60px;} /*товары*/
+}
+
+/*МАКС-*/
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+.profile_catalog {width: 200px; height: 50px; font-size: 16px;} /*скидки на профиле*/
+.user_profile_table p {font-size: 17px;} /*текст*/
+}
+
+/*МАКС*/
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+.profile_catalog {width: 300px; height: 50px; font-size: 16px;} /*скидки на профиле*/
+}
+
+
+/*СТРАНИЦА ДОСТАВКА*/ 
+/*МИН*/
+@media screen and (min-width: 200px) and (max-width: 500px) {
+.deliveryPartners img {width: 60px;} /*иконки доставки*/
+.deliveryINFO img {width: 150px; height: 100px;} /*размер гиф*/
+.deliveryP {font-size: 12px;} /*текст*/
+}
+
+/*МИН+*/
+@media screen and (min-width: 501px) and (max-width: 801px) { 
+.deliveryPartners img {width: 70px;} /*иконки доставки*/
+.deliveryINFO img {width: 200px; height: 150px;} /*размер гиф*/
+.deliveryP {font-size: 13px;} /*текст*/
+}
+
+/*МАКС-*/
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+.deliveryPartners img {width: 130px;} /*иконки доставки*/   
+.deliveryINFO img {width: 250px; height: 200px;} /*размер гиф*/
+.deliveryP {font-size: 15px;} /*текст*/
+}
+
+/*МАКС*/
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+.deliveryINFO img {width: 300px; height: 250px;} /*размер гиф*/
+.deliveryP {font-size: 17px;} /*текст*/    
+}
+
+/*СТРАНИЦА КУРСЫ*/ 
+/*МИН*/
+@media screen and (min-width: 200px) and (max-width: 500px) {
+.masterClass img {width: 50px; height: 50px; padding: 10px;} /*иконки курсов*/
+.masterClass span {font-size: 13px;} /*названия курсов*/
+.smola img {height: 210px;} /*использование смолы (курсы)*/
+.scheme img {width: 120px; height: 120px;} /*схемы плетения (курсы)*/
+.courseInput {width: 310px;} /*форма заявки на курс*/
+}
+
+/*МИН+*/
+@media screen and (min-width: 501px) and (max-width: 801px) { 
+.masterClass img {width: 60px; height: 60px; padding: 10px;} /*иконки курсов*/
+.masterClass span {font-size: 14px;} /*названия курсов*/    
+.smola img {height: 250px;} /*использование смолы (курсы)*/
+.scheme img {width: 130px; height: 130px;} /*схемы плетения (курсы)*/
+.courseInput {width: 420px;} /*форма заявки на курс*/
+}
+
+/*МАКС-*/
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+.masterClass img {width: 130px; height: 130px; padding: 10px;} /*иконки курсов*/
+.masterClass span {font-size: 16px;} /*названия курсов*/  
+.smola img {height: 350px;} /*использование смолы (курсы)*/     
+.scheme img {width: 200px; height: 200px;} /*схемы плетения (курсы)*/
+}
+
+/*МАКС*/
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+.masterClass img {width: 150px; height: 150px; padding: 10px;} /*иконки курсов*/
+.masterClass span {font-size: 16px;} /*названия курсов*/ 
+.smola img {height: 450px;} /*использование смолы (курсы)*/ 
+.scheme img {width: 300px; height: 300px;} /*схемы плетения (курсы)*/    
+}
+
+/*МАКС+*/
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+.scheme img {width: 400px; height: 400px;} /*схемы плетения (курсы)*/    
+}
